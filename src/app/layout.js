@@ -14,22 +14,34 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Sri Satya Sai AC & Refrigeration Services | AC Repair, Fridge Service, AC Installation Kakinada",
-  description: "Prompt doorstep AC repair, fridge service, AC installation, gas refilling & jet foam cleaning in Kakinada. Same-day 60-90 min technician visit, genuine spare parts for Split AC, Refrigerators, Coolers & Central AC.",
+  metadataBase: new URL("https://sri-satya-sai-ac.vercel.app"),
+  title: "Sri Satya Sai AC & Refrigeration Services | AC Service, Repair, Installation & Gas Leakage Kakinada",
+  description: "Prompt doorstep AC repair, fridge service, AC installation, gas leakage detection & refilling, jet foam cleaning in Kakinada. Same-day 60-90 min technician visit, genuine spare parts for Split AC, Refrigerators, Coolers & Central AC.",
   keywords: [
-    "ac services",
-    "fridge service",
+    "ac",
+    "ac service",
     "ac repair",
     "ac installation",
+    "refrigeration",
+    "gas leakage",
+    "ac gas leakage",
+    "ac gas refilling",
+    "fridge service",
     "refrigerator service",
+    "fridge repair",
     "ac service in kakinada",
     "fridge repair kakinada",
+    "ac installation kakinada",
     "split ac repair near me",
-    "ac gas refilling",
-    "ac jet cleaning kakinada",
+    "window ac service",
+    "ac cooling problem",
+    "fridge not cooling",
     "doorstep ac technician",
     "Sri Satya Sai AC repair"
   ],
+  alternates: {
+    canonical: "/",
+  },
   authors: [{ name: "Sri Satya Sai AC and Refrigeration Services" }],
   creator: "Sri Satya Sai AC and Refrigeration Services",
   publisher: "Sri Satya Sai AC and Refrigeration Services",
@@ -38,8 +50,10 @@ export const metadata = {
     address: true,
   },
   openGraph: {
-    title: "Sri Satya Sai AC & Refrigeration Services | Expert Doorstep Repair",
-    description: "Expert doorstep AC and Refrigerator repairs in Kakinada. Same-day visit in 60-90 mins, genuine spares & certified technicians.",
+    title: "Sri Satya Sai AC & Refrigeration Services | AC Repair, Installation & Gas Leakage Fix",
+    description: "Expert doorstep AC, Refrigeration, and Gas Leakage repairs in Kakinada. Same-day visit in 60-90 mins, genuine spares & certified technicians.",
+    url: "https://sri-satya-sai-ac.vercel.app",
+    siteName: "Sri Satya Sai AC & Refrigeration Services",
     type: "website",
     locale: "en_IN",
   },
@@ -52,9 +66,10 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "HVACBusiness",
   "name": "Sri Satya Sai AC and Refrigeration Services",
-  "image": "/images/hero-technician.jpg",
+  "image": "https://sri-satya-sai-ac.vercel.app/images/hero-technician.jpg",
   "telephone": "+919666458789",
   "priceRange": "₹₹",
+  "url": "https://sri-satya-sai-ac.vercel.app",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Seshagiri Rao St, Rama Rao Peta, beside SUBBAYYA GARI HOTEL",
@@ -77,11 +92,12 @@ const jsonLd = {
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Services" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Repair" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Installation" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fridge Service" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Service" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Gas Refilling" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jet Foam Cleaning" } }
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Installation & Uninstallation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Gas Leakage Detection & Refilling" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fridge Service & Repair" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigeration Services" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Split & Window AC Jet Foam Cleaning" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inverter PCB Circuit Board Repair" } }
   ]
 };
 
