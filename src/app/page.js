@@ -791,7 +791,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div className="contact-cards-grid">
             <div className="why-card">
               <div className="why-icon-box">
                 <i className="fa-solid fa-map-location-dot"></i>

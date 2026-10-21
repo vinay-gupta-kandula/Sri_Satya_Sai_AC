@@ -276,6 +276,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -287,7 +289,15 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+.site-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -1580,6 +1590,12 @@ h1, h2, h3, h4, h5, h6 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
 /* ========================================================
    RESPONSIVE DESIGN (MOBILE, TABLET, LAPTOP, DESKTOP)
 ======================================================== */
@@ -1597,6 +1613,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 900px) {
   .booking-card {
     grid-template-columns: 1fr;
+    gap: 28px;
     padding: 28px 20px;
   }
   
@@ -1607,60 +1624,131 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
   body {
     padding-bottom: 74px; /* Space for mobile sticky action bar */
   }
-  
-  .mobile-sticky-bar {
-    display: block;
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   
+  .top-announcement {
+    padding: 5px 0;
+    font-size: 0.75rem;
+  }
+
+  .top-bar-inner {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .top-bar-inner > div:last-child {
+    display: none;
+  }
+
+  .navbar-inner {
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .brand-logo {
+    gap: 8px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .brand-icon-box {
+    width: 36px;
+    height: 36px;
+    font-size: 1.05rem;
+    border-radius: 9px;
+    flex-shrink: 0;
+  }
+
+  .brand-title {
+    font-size: 0.88rem;
+    line-height: 1.15;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
   .nav-links, .nav-contact-actions .btn-call {
     display: none;
   }
+
+  .nav-contact-actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
   
   .nav-contact-actions .btn-whatsapp {
-    padding: 7px 12px;
-    font-size: 0.8rem;
+    padding: 6px 11px;
+    font-size: 0.78rem;
   }
 
   .theme-toggle-btn {
-    padding: 6px 10px;
-    font-size: 0.8rem;
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    padding: 0;
+    font-size: 0.9rem;
   }
 
   .squarespace-hero {
     min-height: auto;
-    padding: 40px 0 35px;
+    padding: 35px 0 28px;
   }
   
   .squarespace-title {
-    font-size: 2.15rem;
-    letter-spacing: -0.8px;
+    font-size: 1.95rem;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    margin-bottom: 12px;
   }
   
   .squarespace-subtitle {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
     margin-bottom: 20px;
+    padding: 0 4px;
   }
   
   .squarespace-cta-group {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
   
   .squarespace-cta-group .btn {
     width: 100%;
     justify-content: center;
+    padding: 13px 20px;
+    font-size: 0.95rem;
   }
   
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card-media {
+    height: 180px;
   }
   
   .service-tab-btn {
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    padding: 8px 14px;
+    font-size: 0.82rem;
   }
   
   .service-tabs-container {
@@ -1668,65 +1756,157 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: flex-start;
     padding-bottom: 8px;
   }
-}
 
-@media (max-width: 600px) {
-  .appliance-tiles-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .booking-section {
+    padding: 40px 0;
+  }
+
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 22px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .booking-info h3 {
+    font-size: 1.65rem;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .booking-info p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .booking-contact-pills {
     gap: 10px;
   }
-  
-  .appliance-tile-card {
-    padding: 12px 8px;
+
+  .contact-pill-item {
+    padding: 10px 12px;
+    gap: 12px;
   }
-  
-  .appliance-tile-name {
-    font-size: 0.85rem;
-  }
-  
-  .appliance-tile-desc {
-    font-size: 0.7rem;
-  }
-  
-  .hero-appliance-eyebrow {
-    font-size: 0.75rem;
-    padding: 6px 14px;
-    letter-spacing: 0.8px;
-  }
-  
-  .brand-title {
+
+  .contact-pill-icon {
+    width: 34px;
+    height: 34px;
     font-size: 0.95rem;
+    flex-shrink: 0;
   }
-  
-  .brand-subtitle {
-    font-size: 0.65rem;
-  }
-  
-  .booking-card {
-    padding: 20px 16px;
-  }
-  
+
   .booking-form {
-    padding: 18px 14px;
+    padding: 20px 16px;
+    gap: 14px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
   }
-  
-  .section-title {
-    font-size: 1.75rem;
+
+  .form-input, .form-select, .form-textarea, .searchable-select-input {
+    padding: 11px 12px;
+    font-size: 0.92rem;
+  }
+
+  .mobile-sticky-bar {
+    display: block;
+    padding: 10px 14px;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
   }
 }
 
 @media (max-width: 480px) {
-  .theme-toggle-btn {
-    padding: 6px 10px;
-    gap: 0;
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
-  .theme-toggle-btn .theme-toggle-label {
-    display: none;
+  .brand-icon-box {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
   }
 
-  .nav-contact-actions {
+  .brand-title {
+    font-size: 0.82rem;
+    line-height: 1.15;
+  }
+
+  .appliance-tiles-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
+  }
+
+  .appliance-tiles-grid > a:last-child {
+    grid-column: span 2;
+  }
+
+  .appliance-tile-card {
+    padding: 10px 6px;
+  }
+
+  .appliance-tile-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .appliance-tile-name {
+    font-size: 0.82rem;
+  }
+
+  .appliance-tile-desc {
+    font-size: 0.68rem;
+  }
+
+  .hero-appliance-eyebrow {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    letter-spacing: 0.4px;
+  }
+
+  .squarespace-title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .booking-card {
+    padding: 16px 12px;
+    gap: 18px;
+  }
+
+  .booking-form {
+    padding: 16px 12px;
+  }
+
+  .booking-info h3 {
+    font-size: 1.45rem;
+  }
+
+  .theme-toggle-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .nav-contact-actions .btn-whatsapp {
+    padding: 5px 9px;
+    font-size: 0.75rem;
   }
 }
 
