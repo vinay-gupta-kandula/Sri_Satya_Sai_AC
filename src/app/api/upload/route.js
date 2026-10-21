@@ -25,14 +25,26 @@ export async function POST(request) {
     const filename = `service-${Date.now()}-${Math.floor(Math.random() * 1000)}${safeExt}`;
     const uploadDir = path.join(process.cwd(), 'public', 'uploads');
 
-    await fs.mkdir(uploadDir, { recursive: true });
-    await fs.writeFile(path.join(uploadDir, filename), buffer);
+    try {
+      await fs.mkdir(uploadDir, { recursive: true });
+      await fs.writeFile(path.join(uploadDir, filename), buffer);
 
-    return NextResponse.json({
-      success: true,
-      url: `/uploads/${filename}`,
-      message: 'Image uploaded successfully'
-    });
+      return NextResponse.json({
+        success: true,
+        url: `/uploads/${filename}`,
+        message: 'Image uploaded successfully'
+      });
+    } catch {
+      // If filesystem is read-only (like Vercel production), return base64 Data URL
+      const mimeType = file.type || 'image/jpeg';
+      const base64Url = `data:${mimeType};base64,${buffer.toString('base64')}`;
+
+      return NextResponse.json({
+        success: true,
+        url: base64Url,
+        message: 'Image processed successfully'
+      });
+    }
   } catch (error) {
     console.error('Upload handler error:', error);
     return NextResponse.json(

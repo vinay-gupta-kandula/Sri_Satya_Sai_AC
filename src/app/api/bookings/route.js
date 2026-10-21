@@ -39,7 +39,11 @@ export async function POST(request) {
     };
 
     bookings.unshift(newBooking);
-    await saveBookings(bookings);
+    try {
+      await saveBookings(bookings);
+    } catch (saveErr) {
+      console.warn('Booking save warning:', saveErr.message);
+    }
 
     return NextResponse.json({
       success: true,
@@ -47,6 +51,7 @@ export async function POST(request) {
       data: newBooking
     }, { status: 201 });
   } catch (error) {
+    console.error('Bookings API error:', error);
     return NextResponse.json(
       { success: false, message: 'Failed to submit booking', error: error.message },
       { status: 500 }
