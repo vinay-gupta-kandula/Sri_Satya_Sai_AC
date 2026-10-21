@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/admin', '/api/'],
       },
     ],
-    sitemap: 'https://srisatyasaiac.vercel.app/sitemap.xml',
+    sitemap: 'https://sri-satya-sai-ac.vercel.app/sitemap.xml',
   };
 }

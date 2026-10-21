@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://srisatyasaiac.vercel.app';
+  const baseUrl = 'https://sri-satya-sai-ac.vercel.app';
   return [
     {
       url: baseUrl,

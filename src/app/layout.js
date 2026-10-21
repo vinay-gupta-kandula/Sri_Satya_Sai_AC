@@ -43,6 +43,9 @@ export const metadata = {
     type: "website",
     locale: "en_IN",
   },
+  verification: {
+    google: "googlefc102dbd2d44179c",
+  },
 };
 
 const jsonLd = {
