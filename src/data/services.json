@@ -1,0 +1,277 @@
+[
+  {
+    "id": "ac-install",
+    "section": "ac",
+    "name": "AC Installation & Uninstallation",
+    "description": "Professional split & window AC mounting, outdoor unit bracket fixing, copper pipe flare connection, vacuuming and electrical safety testing.",
+    "features": [
+      "Split & Window AC installation",
+      "Safe uninstallation without gas loss",
+      "Precision wall bracket mounting",
+      "Vibration-free outdoor unit setup"
+    ],
+    "image": "/uploads/service-1792496777413-629.png",
+    "badge": "Expert Service",
+    "popular": true,
+    "price": "",
+    "updatedAt": "2026-10-20T11:46:22.648Z"
+  },
+  {
+    "id": "ac-general",
+    "section": "ac",
+    "name": "AC General Service",
+    "description": "Comprehensive routine maintenance: air filter cleaning, cooling coil dusting, drain tray flushing, fan blower cleanup, and operational check.",
+    "features": [
+      "Complete dust & grime removal",
+      "Filter mesh wash & sanitize",
+      "Blower & fin inspection",
+      "Airflow & cooling efficiency test"
+    ],
+    "image": "/uploads/service-1792496863246-518.png",
+    "badge": "Recommended Yearly",
+    "popular": false,
+    "price": "",
+    "updatedAt": "2026-10-20T11:47:45.229Z"
+  },
+  {
+    "id": "ac-jet",
+    "section": "ac",
+    "name": "AC Jet or Water Service",
+    "description": "High-pressure water pump cleaning with spill-proof jacket bag. Washes out deep embedded dirt, mud, and dust from indoor cooling coils and outdoor condenser fins.",
+    "features": [
+      "High-pressure water jet cleaning",
+      "Spill-proof waterproof apron jacket",
+      "Cleans evaporator coils & outdoor condenser",
+      "Boosts airflow and cooling speed"
+    ],
+    "image": "/uploads/service-1792496932754-883.png",
+    "badge": "High Pressure Wash",
+    "popular": true,
+    "price": "",
+    "updatedAt": "2026-10-20T11:48:54.743Z"
+  },
+  {
+    "id": "ac-foam",
+    "section": "ac",
+    "name": "AC Foam Service",
+    "description": "Specialized active foam wash that penetrates deep between cooling coil fins to dissolve oily grime, mold, mildew, and foul odors for pure, hygienic, ice-cold air.",
+    "features": [
+      "Deep penetrating active foam formula",
+      "Eliminates fungal growth & foul smell",
+      "Coil-safe aluminum fin degreasing",
+      "Complete sanitization and fresh fragrance"
+    ],
+    "image": "/images/ac-jet-wash.jpg",
+    "badge": "Deep Foam Care",
+    "popular": true
+  },
+  {
+    "id": "ac-gas-leak",
+    "section": "ac",
+    "name": "AC Gas Leakage Detection & Repair",
+    "description": "Nitrogen pressure testing and electronic leak detection to identify minute leaks in copper pipes, flare nuts, or cooling coils, followed by durable brazing.",
+    "features": [
+      "Accurate leak point identification",
+      "Heavy duty copper pipe brazing",
+      "Nitrogen pressure holding test",
+      "Nitrogen leak pressure test included"
+    ],
+    "image": "/images/hero-technician.jpg",
+    "badge": "Certified Repair",
+    "popular": false
+  },
+  {
+    "id": "ac-gas-refill",
+    "section": "ac",
+    "name": "AC Gas Refilling / Top-up",
+    "description": "Full system evacuation, vacuuming with pump, and genuine refrigerant charging (R32, R410A, R22) to exact factory pressure for ice-cold cooling.",
+    "features": [
+      "100% genuine sealed refrigerant cylinders",
+      "Complete deep vacuuming before gas fill",
+      "Accurate manifold gauge calibration",
+      "Immediate ice-chill airflow verification"
+    ],
+    "image": "/uploads/service-1792497421680-645.png",
+    "badge": "Fast Chilling",
+    "popular": true,
+    "price": "",
+    "updatedAt": "2026-10-20T11:57:04.391Z"
+  },
+  {
+    "id": "ac-water-leak",
+    "section": "ac",
+    "name": "AC Water Leakage & Drain Repair",
+    "description": "Resolves indoor unit water dripping, clogged drain lines, tilted indoor units, and cracked drain pans to protect your walls and furniture from damage.",
+    "features": [
+      "Drain pipe unclogging & flush",
+      "Slope realignment of indoor unit",
+      "Drain pan crack sealing",
+      "Prevent mold & water damage"
+    ],
+    "image": "/uploads/service-1792497489338-615.png",
+    "badge": "Quick Fix",
+    "popular": false,
+    "price": "",
+    "updatedAt": "2026-10-20T11:58:11.909Z"
+  },
+  {
+    "id": "ac-complaints",
+    "section": "ac",
+    "name": "Any AC Complaints & Breakdown Repair",
+    "description": "Complete diagnostic for any issue: AC not turning on, compressor tripping, remote/sensor unresponsive, PCB circuit board failure, or abnormal rattling noises.",
+    "features": [
+      "Expert PCB motherboard diagnostics",
+      "Capacitor & compressor testing",
+      "Electrical wiring & thermostat check",
+      "Transparent on-site fault report"
+    ],
+    "image": "/images/ac-repair-pcb.jpg",
+    "badge": "All Brands Handled",
+    "popular": true
+  },
+  {
+    "id": "fridge-cooling",
+    "section": "refrigeration",
+    "name": "Refrigerator Not Cooling / Low Cooling",
+    "description": "Quick doorstep troubleshooting when the freezer is working but the lower fridge is warm, or total loss of cooling across single and double-door refrigerators.",
+    "features": [
+      "Single, Double & Side-by-Side doors",
+      "Air damper & fan motor check",
+      "Defrost sensor & heater testing",
+      "Door gasket seal inspection"
+    ],
+    "image": "/uploads/service-1792503602571-425.png",
+    "badge": "Most Common",
+    "popular": true,
+    "price": "",
+    "updatedAt": "2026-10-20T13:40:03.766Z"
+  },
+  {
+    "id": "fridge-gas",
+    "section": "refrigeration",
+    "name": "Refrigerator Gas Charging & Leak Repair",
+    "description": "Pinpoint detection of pinhole capillary or evaporator leaks, vacuuming of sealed system, and precision refrigerant recharge (R134a, R600a).",
+    "features": [
+      "Safe hydrocarbon & R134a charging",
+      "Filter drier replacement included",
+      "Leak testing on condenser coils",
+      "Restores factory freezing within hours"
+    ],
+    "image": "/uploads/service-1792503741677-666.png",
+    "badge": "Genuine Gas",
+    "popular": true,
+    "price": "",
+    "updatedAt": "2026-10-20T13:42:23.398Z"
+  },
+  {
+    "id": "fridge-compressor",
+    "section": "refrigeration",
+    "name": "Compressor & Motor Repair / Replacement",
+    "description": "Diagnosis for clicking compressor, inverter compressor failure, relay/overload protector burnout, or condenser fan motor malfunction.",
+    "features": [
+      "Inverter & Non-Inverter compressor repair",
+      "Relay & OLP replacement with OEM parts",
+      "Vibration dampening mounting",
+      "High durability compressor installation"
+    ],
+    "image": "/uploads/service-1792503715619-712.png",
+    "badge": "OEM Spares",
+    "popular": false,
+    "price": "",
+    "updatedAt": "2026-10-20T13:41:57.526Z"
+  },
+  {
+    "id": "fridge-ice",
+    "section": "refrigeration",
+    "name": "Excess Ice Formation & Defrost Issue",
+    "description": "Fixes heavy frost build-up in freezer, choked air vents, faulty defrost timer, bimetal thermostat, or thermal fuse in frost-free refrigerators.",
+    "features": [
+      "Defrost timer & thermostat replacement",
+      "Defrost heating element test",
+      "Evaporator fan free-flow check",
+      "Eliminates ice jamming"
+    ],
+    "image": "/uploads/service-1792503809837-763.png",
+    "badge": "Frost-Free Care",
+    "popular": false,
+    "price": "",
+    "updatedAt": "2026-10-20T13:43:32.183Z"
+  },
+  {
+    "id": "fridge-water",
+    "section": "refrigeration",
+    "name": "Refrigerator Water Leakage",
+    "description": "Stops water pooling inside vegetable crisper trays or leaking under the refrigerator caused by blocked drain tubes, cracked drip trays, or melted frost overflow.",
+    "features": [
+      "Deep drain line cleanout",
+      "Evaporation drip tray inspection",
+      "Internal cabinet leak prevention",
+      "Clean & hygienic finish"
+    ],
+    "image": "/uploads/service-1792503866614-338.png",
+    "badge": "Same-Day Fix",
+    "popular": false,
+    "price": "",
+    "updatedAt": "2026-10-20T13:44:28.634Z"
+  },
+  {
+    "id": "fridge-complaints",
+    "section": "refrigeration",
+    "name": "General Maintenance & Any Fridge Complaints",
+    "description": "Comprehensive checkup for strange buzzing noises, flickering light, door not closing tight, power tripping, PCB error codes, or temperature fluctuation.",
+    "features": [
+      "Door magnetic rubber gasket replacement",
+      "Internal wiring & sensor check",
+      "Inverter motherboard diagnosis",
+      "All major brands (LG, Samsung, Whirlpool, Godrej, Haier, etc.)"
+    ],
+    "image": "/images/fridge-repair.jpg",
+    "badge": "All Brands Handled",
+    "popular": true
+  },
+  {
+    "id": "window-ac",
+    "section": "ac",
+    "name": "Window AC Installation & Servicing",
+    "description": "Complete service for window air conditioners: wooden/iron frame fitting, heavy coil chemical wash, fan motor greasing, and refrigerant pressure check.",
+    "features": [
+      "Secure window frame bracket mounting",
+      "Thorough coil fins pressure wash",
+      "Low vibration motor balancing",
+      "Ice-cold airflow restoration"
+    ],
+    "image": "/images/squarespace-hero-appliances.jpg",
+    "badge": "Window Unit Care",
+    "popular": false
+  },
+  {
+    "id": "cooler-service",
+    "section": "refrigeration",
+    "name": "Desert & Commercial Water Cooler Service",
+    "description": "Doorstep servicing for residential desert coolers and industrial water coolers: submersible water pump replacement, honeycomb cooling pad fitting, motor repair, and tank sanitization.",
+    "features": [
+      "Submersible pump & motor repair",
+      "High density honeycomb pad change",
+      "Water tank descaling & cleaning",
+      "Maximum cool humidity circulation"
+    ],
+    "image": "/images/cooler-service.jpg",
+    "badge": "Cooler Specialist",
+    "popular": true
+  },
+  {
+    "id": "central-ac",
+    "section": "ac",
+    "name": "Central AC & Cassette Duct Service",
+    "description": "Professional maintenance for ceiling cassette ACs, ductable units, and commercial VRV/VRF central cooling systems for showrooms, offices, and homes.",
+    "features": [
+      "Ceiling cassette filter & coil wash",
+      "Airflow duct & drain line flush",
+      "Digital pressure & amp testing",
+      "Low noise operation tuning"
+    ],
+    "image": "/images/central-ac.jpg",
+    "badge": "Commercial & Home",
+    "popular": true
+  }
+]

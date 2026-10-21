@@ -1,0 +1,13 @@
+[
+  {
+    "id": "book-1729420010",
+    "customerName": "Ramesh Kumar",
+    "phone": "9999999999",
+    "serviceType": "ac",
+    "serviceName": "AC Jet or Water Service",
+    "address": "Beside Subbayya Gari Hotel Road, Rama Rao Peta, Kakinada",
+    "notes": "Split AC cooling is low and requires jet wash.",
+    "status": "New",
+    "createdAt": "2026-10-20T10:15:00.000Z"
+  }
+]
